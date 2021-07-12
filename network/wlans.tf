@@ -10,7 +10,7 @@ resource "unifi_wlan" "denhac" {
 }
 
 # This is not active
-# resource "unifi_wlan" "denhac-ad-free" {
+# resource "unifi_wlan" "denhac_ad_free" {
   # name       = "denhac-ad-free"
   # passphrase = var.denhac_ad_free_password
   # security   = "wpapsk"
@@ -20,7 +20,7 @@ resource "unifi_wlan" "denhac" {
   # # Not sure what this is but it's not in the provider yet
   # # bbs_transition = true
 
-  # network_id    = unifi_network.denhac-ad-free-net.id
+  # network_id    = unifi_network.denhac_ad_free_net.id
   # ap_group_ids  = [data.unifi_ap_group.default.id]
   # user_group_id = data.unifi_user_group.default.id
 # }
@@ -31,18 +31,18 @@ resource "unifi_wlan" "iot" {
   security   = "wpapsk"
   wlan_band  = "both"
   no2ghz_oui = true
-  network_id    = unifi_network.denhac-iot-net.id
+  network_id    = unifi_network.denhac_iot_net.id
   ap_group_ids  = [data.unifi_ap_group.default.id]
   user_group_id = data.unifi_user_group.default.id
 }
 
-resource "unifi_wlan" "SecureSet-Academy" {
+resource "unifi_wlan" "SecureSet_Academy" {
   name       = "SecureSet-Academy"
   passphrase = var.secure_set_academy_password
   security   = "wpapsk"
   wlan_band  = "both"
   no2ghz_oui = true
-  network_id    = unifi_network.SecureSet-Net-Clone.id
+  network_id    = unifi_network.SecureSet_Net_Clone.id
   ap_group_ids  = [data.unifi_ap_group.default.id]
   user_group_id = data.unifi_user_group.default.id
 }

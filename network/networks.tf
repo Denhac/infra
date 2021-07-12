@@ -34,7 +34,7 @@ resource "unifi_network" "denhac_proxmox" {
 
 # pihole network?
 # Owner: ?
-resource "unifi_network" "denhac-ad-free-net" {
+resource "unifi_network" "denhac_ad_free_net" {
   name = "denhac-ad-free-net"
   purpose = "corporate"
   vlan_id = 12
@@ -44,7 +44,7 @@ resource "unifi_network" "denhac-ad-free-net" {
 }
 
 # Owner: ?
-resource "unifi_network" "denhac-iot-net" {
+resource "unifi_network" "denhac_iot_net" {
   name = "denhac-iot-net"
   purpose = "corporate"
   vlan_id = 50
@@ -61,7 +61,7 @@ resource "unifi_network" "denhac-iot-net" {
 # Owner: ?
 
 # Owner: ?
-resource "unifi_network" "SecureSet-Net-Clone" {
+resource "unifi_network" "SecureSet_Net_Clone" {
   name = "SecureSet-Net-Clone"
   purpose = "corporate"
   vlan_id = 30
@@ -72,7 +72,7 @@ resource "unifi_network" "SecureSet-Net-Clone" {
 }
 
 # Owner: dsockwell
-resource "unifi_network" "Sockwell-100" {
+resource "unifi_network" "Sockwell_100" {
   name = "Sockwell-100"
   purpose = "corporate"
   vlan_id = 100
@@ -81,7 +81,7 @@ resource "unifi_network" "Sockwell-100" {
 }
 
 # Owner: dsockwell
-resource "unifi_network" "Sockwell-110" {
+resource "unifi_network" "Sockwell_110" {
   name = "Sockwell-110"
   purpose = "corporate"
   vlan_id = 110
@@ -90,7 +90,7 @@ resource "unifi_network" "Sockwell-110" {
 }
 
 # Owner: dsockwell
-resource "unifi_network" "Sockwell-120" {
+resource "unifi_network" "Sockwell_120" {
   name = "Sockwell-120"
   purpose = "corporate"
   vlan_id = 120
