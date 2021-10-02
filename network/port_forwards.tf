@@ -1,6 +1,7 @@
 # Owner: ?
 resource "unifi_port_forward" "denhacVPN" {
   name = "denhacVPN"
+  enabled = true
   port_forward_interface = "wan"
   src_ip = "any"
   dst_port = "1175"
@@ -12,6 +13,7 @@ resource "unifi_port_forward" "denhacVPN" {
 # Owner: eddiezane
 resource "unifi_port_forward" "eddie_jump_vpn" {
   name = "eddie jump vpn"
+  enabled = true
   port_forward_interface = "wan"
   src_ip = "any"
   dst_port = "51820"
@@ -23,6 +25,7 @@ resource "unifi_port_forward" "eddie_jump_vpn" {
 # Owner: dsockwell
 resource "unifi_port_forward" "Sockwell_Fwd_1" {
   name = "Sockwell - Fwd1"
+  enabled = true
   port_forward_interface = "wan"
   src_ip = "any"
   dst_port = "8443"
@@ -34,6 +37,7 @@ resource "unifi_port_forward" "Sockwell_Fwd_1" {
 # Owner: dsockwell
 resource "unifi_port_forward" "Sockwell_Fwd_2" {
   name = "Sockwell - Fwd2"
+  enabled = true
   port_forward_interface = "wan"
   src_ip = "any"
   dst_port = "8022"
@@ -45,6 +49,7 @@ resource "unifi_port_forward" "Sockwell_Fwd_2" {
 # Owner: dsockwell
 resource "unifi_port_forward" "Sockwell_VPN" {
   name = "Sockwell_VPN"
+  enabled = true
   port_forward_interface = "wan"
   src_ip = "any"
   dst_port = "21194"
@@ -56,6 +61,7 @@ resource "unifi_port_forward" "Sockwell_VPN" {
 # Owner: ?
 resource "unifi_port_forward" "Storage_Wars_Site_to_Site" {
   name = "Storagewars Site-to-Site"
+  enabled = true
   port_forward_interface = "wan"
   src_ip = "138.68.52.135"
   dst_port = "1194"
@@ -67,6 +73,7 @@ resource "unifi_port_forward" "Storage_Wars_Site_to_Site" {
 # Owner: Scott
 resource "unifi_port_forward" "UVC_HTTP_ChooChoo" {
   name = "UVC_HTTP_ChooChoo"
+  enabled = true
   port_forward_interface = "wan"
   src_ip = "any"
   dst_port = "80"
@@ -78,6 +85,7 @@ resource "unifi_port_forward" "UVC_HTTP_ChooChoo" {
 # Owner: Scott
 resource "unifi_port_forward" "UVC_HTTPs_ChooChoo" {
   name = "UVC_HTTPs_ChooChoo"
+  enabled = true
   port_forward_interface = "wan"
   src_ip = "any"
   dst_port = "443"
@@ -90,6 +98,7 @@ resource "unifi_port_forward" "UVC_HTTPs_ChooChoo" {
 # Owner: Scott
 resource "unifi_port_forward" "UVC_SSH_ChooChoo" {
   name = "UVC_SSH_ChooChoo"
+  enabled = true
   port_forward_interface = "wan"
   src_ip = "any"
   dst_port = "19266"
@@ -102,6 +111,7 @@ resource "unifi_port_forward" "UVC_SSH_ChooChoo" {
 # Owner: Scott
 resource "unifi_port_forward" "UVC_SSH_ChooChoo_19266" {
   name = "UVC_SSH_ChooChoo"
+  enabled = true
   port_forward_interface = "wan"
   src_ip = "any"
   dst_port = "19266"
@@ -114,6 +124,7 @@ resource "unifi_port_forward" "UVC_SSH_ChooChoo_19266" {
 # Owner: Scott
 resource "unifi_port_forward" "UVC_SSH_ChooChoo_17688" {
   name = "UVC_SSH_ChooChoo"
+  enabled = true
   port_forward_interface = "wan"
   src_ip = "any"
   dst_port = "17688"
