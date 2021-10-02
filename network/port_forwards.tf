@@ -20,17 +20,6 @@ resource "unifi_port_forward" "eddie_jump_vpn" {
   protocol = "tcp_udp"
 }
 
-# Owner: ?
-resource "unifi_port_forward" "OMFLogging" {
-  name = "OMFLogging"
-  port_forward_interface = "wan"
-  src_ip = "63.149.98.130"
-  dst_port = "514"
-  fwd_ip = "10.11.4.34"
-  fwd_port = "514"
-  protocol = "tcp_udp"
-}
-
 # Owner: dsockwell
 resource "unifi_port_forward" "Sockwell_Fwd_1" {
   name = "Sockwell - Fwd1"
