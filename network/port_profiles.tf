@@ -21,16 +21,6 @@ data "unifi_port_profile" "denhac_proxmox" {
   depends_on = [unifi_network.denhac_proxmox]
 }
 
-data "unifi_port_profile" "denhac_ad_free_net" {
-  name = "denhac_ad_free_net"
-  depends_on = [unifi_network.denhac_ad_free_net]
-}
-
-data "unifi_port_profile" "denhac_iot_net" {
-  name = "denhac_iot_net"
-  depends_on = [unifi_network.denhac_iot_net]
-}
-
 data "unifi_port_profile" "SecureSet_Net_Clone" {
   name = "SecureSet-Net-Clone"
   depends_on = [unifi_network.SecureSet_Net_Clone]
