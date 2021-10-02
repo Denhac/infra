@@ -172,3 +172,36 @@ resource "unifi_device" "Main_Table_Switch" {
 resource "unifi_device" "denhac_Front_AP" {
   name = "denhac Front AP"
 }
+
+resource "unifi_device" "Classroom_Switch" {
+  name = "Classroom Switch"
+
+  port_override {
+    number = 1
+    name = "Uplink - Server Room Switch #1"
+  }
+
+  port_override {
+    number = 2
+    name = "Classroom AP"
+  }
+}
+
+resource "unifi_device" "Lounge_Switch" {
+  name = "Lounge Switch"
+
+  port_override {
+    number = 1
+    name = "Uplink - Server Room Switch #1"
+  }
+
+  port_override {
+    number = 2
+    name = "Lounge AP"
+  }
+
+  port_override {
+    number = 3
+    name = "Lounge Camera"
+  }
+}
