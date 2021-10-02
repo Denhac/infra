@@ -32,7 +32,7 @@ resource "unifi_network" "denhac_proxmox" {
   dhcp_stop = "10.0.55.254"
 }
 
-# Owner: ?
+# Owner: Flip
 resource "unifi_network" "SecureSet_Net_Clone" {
   name = "SecureSet-Net-Clone"
   purpose = "corporate"
