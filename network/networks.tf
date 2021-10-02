@@ -70,7 +70,7 @@ resource "unifi_network" "Sockwell_120" {
   dhcp_enabled = false
 }
 
-# Owner: ?
+# Owner: dsockwell
 resource "unifi_network" "Storage_Wars" {
   name = "Storage Wars"
   purpose = "corporate"
