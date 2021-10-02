@@ -53,7 +53,7 @@ data "unifi_port_profile" "VideoCameras" {
 
 resource "unifi_port_profile" "Sockwell_Port_Profile" {
   name = "Sockwell-Port-Profile"
-  native_networkconf_id = unifi_network.denhac_LAN
+  native_networkconf_id = unifi_network.denhac_LAN.id
   poe_mode = "auto"
   autoneg = true
   forward = "customize"

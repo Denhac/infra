@@ -50,6 +50,12 @@ resource "unifi_device" "Server_Room_Switch_1" {
   }
 
   port_override {
+    number = 15
+    name = "Back Area Switch"
+    port_profile_id = data.unifi_port_profile.denhac_LAN.id
+  }
+
+  port_override {
     number = 17
     port_profile_id = data.unifi_port_profile.denhac_LAN.id
   }
@@ -61,6 +67,18 @@ resource "unifi_device" "Server_Room_Switch_1" {
 
   port_override {
     number = 19
+    port_profile_id = data.unifi_port_profile.denhac_LAN.id
+  }
+
+  port_override {
+    number = 21
+    name = "Lounge Switch"
+    port_profile_id = data.unifi_port_profile.denhac_LAN.id
+  }
+
+  port_override {
+    number = 23
+    name = "Classroom Switch"
     port_profile_id = data.unifi_port_profile.denhac_LAN.id
   }
 
@@ -118,32 +136,32 @@ resource "unifi_device" "Member_Space_Rack_Switch_1" {
   }
 
   port_override {
-    name = "Radioshack Idracs"
     number = 17
+    name = "Radioshack Idracs"
     port_profile_id = data.unifi_port_profile.denhac_proxmox.id
   }
 
   port_override {
-    name = "Radioshack Idrac #2"
     number = 19
+    name = "Radioshack Idrac #2"
     port_profile_id = data.unifi_port_profile.denhac_proxmox.id
   }
 
   port_override {
-    name = "denhac proxmox 01"
     number = 21
+    name = "denhac proxmox 01"
     port_profile_id = data.unifi_port_profile.denhac_proxmox.id
   }
 
   port_override {
-    name = "denhac proxmox 02"
     number = 23
+    name = "denhac proxmox 02"
     port_profile_id = data.unifi_port_profile.denhac_proxmox.id
   }
 
   port_override {
-    name = "Uplink"
     number = 24
+    name = "Uplink - Server Room Switch #1"
   }
 }
 
