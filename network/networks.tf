@@ -10,7 +10,7 @@ resource "unifi_network" "denhac_LAN" {
 }
 
 # LDAP
-# Owner: ?
+# Owner: Justin
 resource "unifi_network" "denhac_ldap" {
   name = "denhac_ldap"
   purpose = "corporate"
