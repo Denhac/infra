@@ -32,34 +32,6 @@ resource "unifi_network" "denhac_proxmox" {
   dhcp_stop = "10.0.55.254"
 }
 
-# pihole network?
-# Owner: ?
-resource "unifi_network" "denhac_ad_free_net" {
-  name = "denhac-ad-free-net"
-  purpose = "corporate"
-  vlan_id = 12
-  domain_name = "denhac-ad-free"
-  subnet = "10.12.0.1/24"
-  dhcp_enabled = false
-}
-
-# Owner: ?
-resource "unifi_network" "denhac_iot_net" {
-  name = "denhac-iot-net"
-  purpose = "corporate"
-  vlan_id = 50
-  domain_name = "iot.inside.denhac.org"
-  subnet = "192.168.25.1/24"
-  dhcp_enabled = true
-  dhcp_start = "192.168.25.6"
-  dhcp_stop = "192.168.25.254"
-}
-
-# MWCCDC
-# Site-to-site vpn
-# No support in unifi provider yet
-# Owner: ?
-
 # Owner: ?
 resource "unifi_network" "SecureSet_Net_Clone" {
   name = "SecureSet-Net-Clone"
