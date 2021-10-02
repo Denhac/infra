@@ -34,6 +34,14 @@ resource "unifi_user" "proxmox_02" {
 }
 
 # eddiezane
+resource "unifi_user" "eddie_jump" {
+  name = "eddie_jump"
+  mac = "2a:38:08:70:71:a8"
+  network_id = unifi_network.denhac_proxmox.id
+  fixed_ip = "10.0.55.21"
+}
+
+# eddiezane
 resource "unifi_user" "keycloak" {
   name = "keycloak"
   mac = "5a:b7:08:5d:64:e8"

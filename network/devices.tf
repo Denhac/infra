@@ -40,6 +40,11 @@ resource "unifi_device" "Server_Room_Switch_1" {
   }
 
   port_override {
+    number = 11
+    name = "denhac NVR Pro"
+  }
+
+  port_override {
     number = 12
     port_profile_id = data.unifi_port_profile.denhac_LAN.id
   }
