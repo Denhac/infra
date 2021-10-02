@@ -189,6 +189,10 @@ resource "unifi_device" "Classroom_Switch" {
   }
 }
 
+resource "unifi_device" "Classroom_AP" {
+  name = "Classroom AP"
+}
+
 resource "unifi_device" "Lounge_Switch" {
   name = "Lounge Switch"
 
@@ -206,4 +210,8 @@ resource "unifi_device" "Lounge_Switch" {
     number = 3
     name = "Lounge Camera"
   }
+}
+
+resource "unifi_device" "Lounge_AP" {
+  name = "Lounge AP"
 }

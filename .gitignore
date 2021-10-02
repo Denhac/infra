@@ -29,3 +29,7 @@ override.tf.json
 # example: *tfplan*
 
 *.tfvars
+
+backend.tf
+.terraformrc
+terraform.rc
