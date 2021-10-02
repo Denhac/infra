@@ -88,19 +88,20 @@ resource "unifi_device" "Server_Room_Switch_1" {
   }
 }
 
-resource "unifi_device" "Back_Area_Switch" {
-  name = "Back Area Switch"
+# Not plugged in right now
+# resource "unifi_device" "Back_Area_Switch" {
+  # name = "Back Area Switch"
 
-  port_override {
-    number = 4
-    port_profile_id = data.unifi_port_profile.denhac_LAN.id
-  }
+  # port_override {
+    # number = 4
+    # port_profile_id = data.unifi_port_profile.denhac_LAN.id
+  # }
 
-  port_override {
-    number = 5
-    port_profile_id = data.unifi_port_profile.denhac_LAN.id
-  }
-}
+  # port_override {
+    # number = 5
+    # port_profile_id = data.unifi_port_profile.denhac_LAN.id
+  # }
+# }
 
 resource "unifi_device" "Member_Space_Rack_Switch_1" {
   name = "Member Space Rack Switch #1"
@@ -165,9 +166,10 @@ resource "unifi_device" "Member_Space_Rack_Switch_1" {
   }
 }
 
-resource "unifi_device" "Main_Table_Switch" {
-  name = "Main Table Switch"
-}
+# Not plugged in right now
+# resource "unifi_device" "Main_Table_Switch" {
+  # name = "Main Table Switch"
+# }
 
 resource "unifi_device" "denhac_Front_AP" {
   name = "denhac Front AP"

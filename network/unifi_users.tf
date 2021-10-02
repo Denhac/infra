@@ -23,21 +23,21 @@ resource "unifi_user" "thommy" {
 resource "unifi_user" "proxmox_01" {
   name = "proxmox-01"
   mac = "00:21:9b:9b:61:d5"
-  network_id = unifi_network.denhac_proxmox
+  network_id = unifi_network.denhac_proxmox.id
 }
 
 # eddiezane
 resource "unifi_user" "proxmox_02" {
   name = "proxmox-02"
   mac = "00:21:9b:92:c5:c1"
-  network_id = unifi_network.denhac_proxmox
+  network_id = unifi_network.denhac_proxmox.id
 }
 
 # eddiezane
 resource "unifi_user" "keycloak" {
   name = "keycloak"
   mac = "5a:b7:08:5d:64:e8"
-  network_id = unifi_network.denhac_proxmox
+  network_id = unifi_network.denhac_proxmox.id
 }
 
 # Classroom Chromecast
