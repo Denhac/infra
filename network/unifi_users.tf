@@ -85,3 +85,11 @@ resource "unifi_user" "denhac_NVR_Pro" {
   fixed_ip = "10.11.4.2"
   network_id = unifi_network.denhac_LAN.id
 }
+
+# ChooChoo - ADS-B Tracking
+resource "unifi_user" "ads-b" {
+  name = "ads-b"
+  mac = "16:de:67:3a:9a:15"
+  network_id = unifi_network.denhac_LAN.id
+  fixed_ip = "10.11.3.123"
+}
