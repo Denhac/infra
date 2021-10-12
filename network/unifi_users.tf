@@ -93,3 +93,19 @@ resource "unifi_user" "ads-b" {
   network_id = unifi_network.denhac_LAN.id
   fixed_ip = "10.11.3.123"
 }
+
+# WcktKlwn - Pi-Star - Duplex
+resource "unifi_user" "wcktklwn-pistar-duplex" {
+  name = "wcktklwn-pistar-duplex"
+  mac = "b8:27:eb:17:89:9b"
+  network_id = unifi_network.denhac_LAN.id
+  fixed_ip = "10.11.1.200"
+}
+
+# WcktKlwn - Pi-Star - Simplex
+resource "unifi_user" "wcktklwn-pistar-simplex" {
+  name = "wcktklwn-pistar-simplex"
+  mac = "b8:27:eb:b3:20:76"
+  network_id = unifi_network.denhac_LAN.id
+  fixed_ip = "10.11.1.201"
+}
