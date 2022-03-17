@@ -1,0 +1,6 @@
+proxmox_url = "https://127.0.0.1/api2/json"
+proxmox_node = "pve-01"
+proxmox_username = "user@pve!tokenname"
+proxmox_token = "dead-beef"
+denhac_password = "password"
+denhac_password_enc = ""
